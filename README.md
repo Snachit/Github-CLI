@@ -17,7 +17,7 @@ The GitHub CLI Tool is a command-line interface that allows you to manage your G
 1. **Clone the Repository**
 
     ```bash
-    git clone https://github.com/your-username/github-cli-tool.git
+    git clone https://github.com/Snachit/github-cli-tool.git
     cd github-cli-tool
     ```
 
