@@ -1,5 +1,5 @@
 # GitHub CLI Tool
-
+![Terminal Screenshot](GithubCLI.png)
 ## Overview
 The GitHub CLI Tool is a command-line interface that allows you to manage your GitHub repositories with ease. You can make repositories private or public, and delete repositories directly from your terminal.
 
@@ -99,8 +99,5 @@ Here's a step-by-step example of how to make repositories private:
 
 5. **The tool will update the visibility of the selected repositories to private.**
 
-## Screenshot
 
-Add a screenshot of your terminal running the script below:
 
-![Terminal Screenshot](path/to/your/screenshot.png)
