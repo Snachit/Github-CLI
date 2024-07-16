@@ -1,4 +1,4 @@
-# GitHub CLI Tool
+# GitHub CLI 
 ![Terminal Screenshot](GithubCLi.png)
 ## Overview
 The GitHub CLI Tool is a command-line interface that allows you to manage your GitHub repositories with ease. You can make repositories private or public, and delete repositories directly from your terminal.
