@@ -1,8 +1,8 @@
 import requests
 import pyfiglet
 from termcolor import colored
+import inquirer  
 
-# Constants
 GITHUB_API_URL = "https://api.github.com"
 
 def display_intro():
@@ -75,13 +75,21 @@ if __name__ == "__main__":
     access_token = get_access_token()
 
     while True:
-        print(colored("""Choose your option:
-               1- Make repositories Private 🔒
-               2- Make repositories Public 🌍
-               3- Delete repositories 🗑️""", 'yellow'))
+        questions = [
+            inquirer.List(
+                'choice',
+                message="Choose your option:",
+                choices=[
+                    '1- Make repositories Private 🔒',
+                    '2- Make repositories Public 🌍',
+                    '3- Delete repositories 🗑️'
+                ]
+            )
+        ]
         
-        choice = input("Your choice: ").strip()
-        
+        answers = inquirer.prompt(questions)
+        choice = answers['choice'].split('-')[0].strip()
+
         if choice in ['1', '2', '3']:
             repos = get_repos(access_token)
             if choice == '1':
